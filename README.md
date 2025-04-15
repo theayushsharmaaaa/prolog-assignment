@@ -103,30 +103,7 @@ The system is built on four primitive relations:
 
 From these primitives, derived relations like father, mother, chacha, etc. are defined using logical rules. The system uses breadth-first search to find the shortest path between family members and provides multiple ways to format and describe these relationships.
 
-## Extending the System
 
-### Adding Family Members
-
-1. Add gender facts:
-   ```prolog
-   male(new_person).
-   female(new_person).
-   ```
-
-2. Add parent relationships:
-   ```prolog
-   parent(parent_name, child_name).
-   ```
-
-3. Add marriage relationships:
-   ```prolog
-   married(person1, person2).
-   married(person2, person1).  % Both directions are required
-   ```
-
-## Background
-
-This system was developed as an assignment for the Knowledge Representation and Reasoning course. It demonstrates how logical programming can model and query complex family relationships, with a focus on culturally specific Indian kinship terms.
 
 
 # Assignment 2
